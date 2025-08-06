@@ -1,6 +1,6 @@
 import { Copy, ThumbsUp, ThumbsDown, RefreshCw } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
+import { Button } from "../components/ui/button";
+import { useToast } from "../components/hooks/use.toast";
 import { cn } from "../components/library/utils";
 
 interface Message {

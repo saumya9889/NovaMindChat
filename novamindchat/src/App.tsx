@@ -1,9 +1,14 @@
-import './index.css'
-import Index from './Pages/Index'
+// App.tsx
+import './index.css';
+import Index from './Pages/Index';
+import { ToastProvider } from './components/context/toast-context'; // 🔁 correct path if different
 
-// App component jo simply Index page render karta hai
 function App() {
-  return <Index />
+  return (
+    <ToastProvider>
+      <Index />
+    </ToastProvider>
+  );
 }
 
-export default App
+export default App;

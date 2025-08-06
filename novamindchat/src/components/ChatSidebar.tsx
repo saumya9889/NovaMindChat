@@ -1,7 +1,6 @@
-import React from "react";
 import { MessageSquare, Plus, MoreHorizontal, Edit, Trash } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "../components/ui/button";
+import { cn } from "../components/library/utils";
 
 interface Conversation {
   id: string;
