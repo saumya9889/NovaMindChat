@@ -1,22 +1,23 @@
 import { Copy, ThumbsUp, ThumbsDown, RefreshCw } from "lucide-react";
-import { Button } from "../components/ui/button";
-import { useToast } from "../components/hooks/use.toast";
+import Button  from "../components/ui/button";
+import { useToast } from "../components/hooks/use.toast"; 
 import { cn } from "../components/library/utils";
 
-interface Message {
-  id: string;
-  content: string;
-  sender: "user" | "assistant";
-  timestamp: string;
+interface MessagePropsType {
+   message: {
+    id: string;
+    content: string;
+    sender: string; // "user" or "assistant"
+    timestamp: string;
+  }
 }
 
-interface ChatMessageProps {
-  message: Message;
-}
+ 
 
-export const ChatMessage = ({ message }: ChatMessageProps) => {
+export const ChatMessage = ( {message} : MessagePropsType) => {
   const isUser = message.sender === "user";
-  const { toast } = useToast();
+  console.log('message:', message);
+  const { toast }:any = useToast();
 
   const handleCopy = async () => {
     try {

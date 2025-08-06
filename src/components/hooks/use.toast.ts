@@ -1,5 +1,3 @@
-// src/components/hooks/use-toast.ts
-
 import { useContext } from "react";
 import { ToastContext } from "../context/toast-context";
 

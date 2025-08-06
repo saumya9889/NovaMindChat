@@ -6,6 +6,9 @@ import { ToastProvider } from './components/context/toast-context'; // 🔁 corr
 function App() {
   return (
     <ToastProvider>
+          <div className="text-3xl font-bold text-blue-600">
+      Hello Tailwind + React + TypeScript!
+    </div>
       <Index />
     </ToastProvider>
   );

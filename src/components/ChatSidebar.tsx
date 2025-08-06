@@ -1,5 +1,5 @@
 import { MessageSquare, Plus, MoreHorizontal, Edit, Trash } from "lucide-react";
-import { Button } from "../components/ui/button";
+import  Button  from "../components/ui/button";
 import { cn } from "../components/library/utils";
 
 interface Conversation {

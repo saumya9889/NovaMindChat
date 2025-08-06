@@ -25,6 +25,7 @@ const Button = ({ variant = "default", size = "md", className, ...props }: Butto
 
   return (
     <button
+      type="button" 
       className={cn(base, variants[variant], sizes[size], className)}
       {...props}
     />
